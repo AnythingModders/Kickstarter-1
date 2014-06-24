@@ -70,12 +70,12 @@ public class Kickstarter extends JavaPlugin {
 			Player p = (Player) sender;
 
 			if (args.length == 0) {
-				p.sendMessage("Showing all Kickstarter commands:");
-				p.sendMessage("/kickstarter - display all the Kickstarter commands");
-				p.sendMessage("/kickstarter create <name> <target> - create a project");
-				p.sendMessage("/kickstarter end - end your project");
-				p.sendMessage("/kickstarter fund <name> <amount> - fund a project");
-				p.sendMessage("/kickstarter browse - display all the projects");
+				p.sendMessage(ChatColor.GOLD + "Showing all Kickstarter commands:");
+				p.sendMessage(ChatColor.BLUE + "/kickstarter - display all the Kickstarter commands");
+				p.sendMessage(ChatColor.BLUE + "/kickstarter create <name> <target> - create a project");
+				p.sendMessage(ChatColor.BLUE + "/kickstarter end - end your project");
+				p.sendMessage(ChatColor.BLUE + "/kickstarter fund <name> <amount> - fund a project");
+				p.sendMessage(ChatColor.BLUE + "/kickstarter browse - display all the projects");
 			} else if (args.length > 0) {
 				if (args[0].equalsIgnoreCase("create")) {
 					if (!p.hasPermission("kickstarter.create")) {
